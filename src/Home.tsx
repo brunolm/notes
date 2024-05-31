@@ -65,8 +65,8 @@ class Home extends Nullstack<any> {
     }
   }
 
-  prepare({ project, page, greeting }: NullstackClientContext<any>) {
-    page.title = `${project.name} - ${greeting}`
+  prepare({ project, page }: NullstackClientContext<any>) {
+    page.title = `${project.name}`
     page.description = `${project.name} was made with Nullstack`
   }
 
