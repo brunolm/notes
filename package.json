@@ -16,7 +16,7 @@
   },
   "scripts": {
     "start": "npx nullstack start",
-    "build": "npx nullstack build --mode=ssg --output=dist"
+    "build": "npx nullstack build --mode=ssg --output=ssg"
   },
   "dependencies": {
     "prismjs": "^1.29.0",
