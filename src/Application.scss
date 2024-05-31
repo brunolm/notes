@@ -1,0 +1,100 @@
+body {
+  @apply bg-gray-900 text-zinc-300;
+  font-size: 18px;
+}
+
+h1 { font-size: 3.5rem; font-weight: bold; }
+h2 { font-size: 3rem; font-weight: bold; }
+h3 { font-size: 2.5rem; font-weight: bold; }
+h4 { font-size: 2rem; font-weight: bold; }
+h5 { font-size: 1.5rem; font-weight: bold; }
+
+
+blockquote {
+  @apply text-zinc-200 pl-8 border-l-4 border-gray-300 my-2 italic;
+}
+
+p {
+  @apply my-4;
+}
+
+main {
+  min-height: 100vh;
+}
+
+ul li {
+  @apply list-disc list-inside;
+}
+
+ol li {
+  @apply list-decimal list-inside;
+}
+
+
+/*! purgecss start ignore */
+
+pre {
+  @apply w-full p-2 overflow-x-auto rounded;
+  color: #9cdcfe;
+  background-color: #1f1f1f;
+}
+
+@-moz-document url-prefix() {
+  pre {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  pre {
+    overflow-x: auto;
+  }
+}
+
+.token.selector,
+.token.tag {
+  @apply text-emerald-500;
+}
+
+.token.comment {
+  color: #6a9955 !important;
+}
+
+.token.string,
+.token.attr-value {
+  color: #99c47a !important;
+}
+
+.token.atrule,
+.token.keyword {
+  @apply text-blue-500;
+}
+
+.token.property,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.attr-name,
+.token.deleted {
+  color: #e9ac72 !important;
+}
+
+.token.class-name {
+  color: #4ec9b0 !important;
+}
+
+.token.function,
+.token.operator {
+  color: #71bfff !important;
+}
+
+.token.punctuation {
+  color: #da70d6 !important;
+}
+
+.token.literal-property.property {
+  color: #9cdcfe !important;
+}
+
+/*! purgecss end ignore */
